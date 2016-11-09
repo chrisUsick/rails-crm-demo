@@ -1,0 +1,17 @@
+<div>
+  <div class="customer-action-links">
+    <%= link_to 'Edit', customer_path(@customer) %>
+    <%= link_to 'X', customer_path(@customer) %>
+  </div>
+  <h3><%= @customer.full_name %></h3>
+  <%= image_tag @customer.image %>
+  <p>
+    <strong>Phone:</strong> <%= @customer.phone %>
+  </p>
+  <p>
+    <strong>Email:</strong> <%= @customer.email_address %>
+  </p>
+  <p>
+    <strong>Notes:</strong> <%= @customer.notes %>
+  </p>
+</div>
