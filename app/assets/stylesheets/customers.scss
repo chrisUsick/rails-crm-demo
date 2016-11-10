@@ -1,3 +1,16 @@
 // Place all the styles related to the Customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.customer-columns {
+  column-gap: 10px;
+}
+
+.customer {
+  column-width: 320px;
+  box-shadow: 5px 5px 10 10 grey;
+  display: inline-block;
+  background-color: white;
+  margin: 5px;
+  border: 1px solid black;
+}

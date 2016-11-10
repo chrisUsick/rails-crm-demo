@@ -1,17 +1,17 @@
-<div>
+<div class="customer">
   <div class="customer-action-links">
-    <%= link_to 'Edit', customer_path(@customer) %>
-    <%= link_to 'X', customer_path(@customer) %>
+    <%= link_to 'Edit', edit_customer_path(customer) %>
+    <%= link_to 'X', customer, method: :delete %>
   </div>
-  <h3><%= @customer.full_name %></h3>
-  <%= image_tag @customer.image %>
+  <h3><%= customer.full_name %></h3>
+  <%= image_tag customer.image %>
   <p>
-    <strong>Phone:</strong> <%= @customer.phone %>
+    <strong>Phone:</strong> <%= customer.phone_number %>
   </p>
   <p>
-    <strong>Email:</strong> <%= @customer.email_address %>
+    <strong>Email:</strong> <%= customer.email_address %>
   </p>
   <p>
-    <strong>Notes:</strong> <%= @customer.notes %>
+    <strong>Notes:</strong> <%= customer.notes %>
   </p>
 </div>

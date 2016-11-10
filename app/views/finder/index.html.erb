@@ -1,0 +1,8 @@
+<h1>All Customers</h1>
+<%= link_to 'Alphabetized', controller: 'finder', action: 'alphabetized' %>
+<%= link_to 'Missing Email', controller: 'finder', action: 'missing_email' %>
+<div class="customer-list">
+  <% @customers.each do |customer| %>
+    <%= render customer %>
+  <% end %>
+</div>
